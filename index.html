@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JISLOZT</title>
+</head>
+
+<body style="font-family:Verdana; font-size:20px; background-color:white;" onLoad="init();">
+	<br><br>
+	<table style="margin:auto;">
+		<tr>
+			<td>
+				<canvas id="game" width="800" height="500" style="border-radius:20px;"></canvas>
+			</td>
+			<td>
+				<span style="text-align:center; font-size:12px" id="debug"></span>
+			</td>
+		</tr>
+	</table>
+	
+	<audio id="mscGame" loop><source src="sounds/music.ogg" type="audio/ogg"></audio>	
+	<audio id="mscPowerup" loop><source src="sounds/musicPowerup.ogg" type="audio/ogg"></audio>	
+	<audio id="mscMenu"><source src="sounds/musicMenu.ogg" type="audio/ogg"></audio>	
+	<audio id="mscGameOver"><source src="sounds/musicGameOver.ogg" type="audio/ogg"></audio>	
+	<audio id="sndPieceBulletShoot"><source src="sounds/pieceBulletShoot.wav" type="audio/wav"></audio>	
+	<audio id="sndPieceBulletRotate"><source src="sounds/pieceBulletRotate.wav" type="audio/wav"></audio>	
+	<audio id="sndPieceBulletImpact"><source src="sounds/pieceBulletImpact.wav" type="audio/wav"></audio>	
+	<audio id="sndLineClear"><source src="sounds/lineClear.wav" type="audio/wav"></audio>	
+	<audio id="sndLaser"><source src="sounds/laser.wav" type="audio/wav"></audio>	
+	<audio id="sndPlanetDamage"><source src="sounds/planetDamage.wav" type="audio/wav"></audio>	
+	<audio id="sndEnemyDeath"><source src="sounds/enemyDeath.wav" type="audio/wav"></audio>
+	<audio id="sndEnemyExplosion"><source src="sounds/enemyExplosion.wav" type="audio/wav"></audio>
+	<audio id="sndPerfect"><source src="sounds/perfect.wav" type="audio/wav"></audio>	
+	<audio id="sndExcellent"><source src="sounds/excellent.wav" type="audio/wav"></audio>	
+	<audio id="sndNice"><source src="sounds/nice.wav" type="audio/wav"></audio>	
+	<audio id="sndUltraPerfect"><source src="sounds/ultraperfect.wav" type="audio/wav"></audio>	
+	<audio id="sndAwesome"><source src="sounds/awesome.wav" type="audio/wav"></audio>	
+	<audio id="sndPowerup"><source src="sounds/powerup.wav" type="audio/wav"></audio>	
+	<audio id="sndHealthup"><source src="sounds/healthup.wav" type="audio/wav"></audio>	
+	<audio id="sndNoBonus"><source src="sounds/nobonus.wav" type="audio/wav"></audio>	
+	
+</body>
+
+<script src="main.js"></script>
+<script src="stateMenuMain.js"></script>
+<script src="stateMenuHowToPlay.js"></script>
+<script src="stateMenuGameOver.js"></script>
+<script src="stateGame.js"></script>
+<script src="stateGamePlayer.js"></script>
+<script src="stateGameBackground.js"></script>
+<script src="stateGamePlanet.js"></script>
+<script src="stateGamePieceBullet.js"></script>
+<script src="stateGamePieceBulletPreview.js"></script>
+<script src="stateGamePiecePlayfield.js"></script>
+<script src="stateGameEnemyBasic.js"></script>
+<script src="stateGameEnemyBonus.js"></script>
+<script src="stateGameEnemyPowerup.js"></script>
+<script src="stateGameEnemyTrollRotation.js"></script>
+<script src="stateGameParticlesCircle.js"></script>
+<script src="stateGameFallingBlock.js"></script>
+<script src="stateGameHUD.js"></script>
+<script src="stateGameSpecialScore.js"></script>
+
+</html>
